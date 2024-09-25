@@ -31,7 +31,7 @@ The system prompts are in the `app.py` main file if you'd like to tweak or exten
 ## Setup the templates
 
 Formatter really shines once you've got your templates set up. You'll need to select the "Format" mode selector to use them.
-Templates are just markdown files (`.md`) where you create a skeleton of what your final note will look like.
+Templates are just markdown files (`.md`) where you create a skeleton of what your final note will look like. All your templates go into the `templates/` folder at the root of the Formatter directory. You'll need to create it if it doesn't exist.
 
 Typically, you will use markdown headings that the LLM will follow to structure your notes. I also strongly suggest to explain the contents of the subheading between brackets. Here's an example for a barebones note organizer:
 

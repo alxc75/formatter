@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+import pyclip
 import os
 
 st.set_page_config(page_title="Formatter", page_icon="🧠", layout="wide")
@@ -24,6 +25,7 @@ mode = st.radio("Mode", ["Clean", "Format", "Summarize"], horizontal=True)
 
 if mode == 'Format':
     templates = os.listdir("templates")
+    templates = [t for t in templates if t.endswith(".md")]
     templates = [t.replace(".md", "").capitalize() for t in templates]
     if len(templates) == 0:
         templates = None
@@ -90,6 +92,8 @@ if text:
 
     if btn:
         with st.spinner("Processing your text, please wait..."):
-            send_payload(text)
-            st.write(send_payload(text))
+            output = send_payload(text)
+            st.write(output)
+            pyclip.copy(output)
+            st.toast("Output copied to clipboard!", icon="📋")
 
