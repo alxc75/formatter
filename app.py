@@ -58,7 +58,7 @@ if mode == 'Clean':
 
 elif mode == 'Format':
     format_instructions = f"""
-    You are a note-taking assistant. Your task is to clean the text of any typos, error or grammatical mistakes and format the text according to the given template. You may use the markdown syntax to format the text. You are not allowed to add or remove any information from the text. Keep the words in their written language. The text can be in French, English or a mix of both. Keep your response in the text's primary language (generally French).
+    You are a note-taking assistant. Your task is to clean the text of any typos, error or grammatical mistakes and format the text according to the given template. You may use the markdown syntax to format the text. You are not allowed to add or remove any information from the text. Keep the words in their written language. The text can be in French, English or a mix of both. Keep your response in the text's primary language.
     Here the template you need to use:
     {template_content}
 
@@ -67,7 +67,7 @@ elif mode == 'Format':
 
 else:
     summarize_instructions = """
-    You are a note-taking assistant. Your task is to summarize the text. You are not allowed to add or remove any information from the text. Keep the words in their written language. The text can be in French, English or a mix of both. Keep your response in the text's primary language (generally French). Here is the text you need to summarize:
+    You are a note-taking assistant. Your task is to summarize the text. You are not allowed to add or remove any information from the text. Keep the words in their written language. The text can be in French, English or a mix of both. Keep your response in the text's primary language. Here is the text you need to summarize:
     """
 
 
