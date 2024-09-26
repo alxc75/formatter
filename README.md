@@ -10,7 +10,7 @@ Uses the OpenAI API for the behind-the-scene magic. Get your key [here](https://
 2. Install the dependencies with
 
 ```python
-pip install openai streamlit
+pip install openai streamlit pyclip
 ```
 
 3. Open the terminal in the formatter directory and run `streamlit run app.py`
